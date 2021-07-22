@@ -1,0 +1,26 @@
+#navigation
+{
+    background-color : rgba(96, 214, 42, 0.973);
+}
+#BarsHolder
+{
+    margin-top:10px;
+    margin-right:auto;
+    margin-left:auto;
+    
+}
+
+.container1
+{
+    padding-right:8%;
+    padding-left:8%;
+}
+
+.bar
+{
+    margin:2px;
+    float:left;
+    width:8px;
+    background-color:rgb(45, 87, 224);
+    border-radius:4px;
+}
