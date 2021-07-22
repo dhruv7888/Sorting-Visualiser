@@ -5,20 +5,14 @@
 #BarsHolder
 {
     margin-top:10px;
-    margin-right:auto;
-    margin-left:auto;
-    
+    padding-left:8%;    
 }
 
-.container1
-{
-    padding-right:8%;
-    padding-left:8%;
-}
 
 .bar
 {
-    margin:2px;
+    margin-left:0.1%;
+    margin-right:0.1%;
     float:left;
     width:8px;
     background-color:rgb(45, 87, 224);
