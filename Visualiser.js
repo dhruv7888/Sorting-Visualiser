@@ -24,7 +24,7 @@ function BarGeneration()
         let Bar=document.createElement('div');
         Bar.className="bar";
         Bar.style.height=height+"px";
-        Bar.style.width=(70/n)+"%";
+        Bar.style.width=((90-(n*0.2))/n)+"%";
         holder.appendChild(Bar);
     }
     bars=document.querySelector("#BarsHolder").children;
@@ -61,6 +61,7 @@ async function InsertionSort()
     {
         key = heights[i];
         j = i - 1;
+        await assign(i,heights[i],"rgb(233, 8, 8)");   
         while (j >= 0 && heights[j] > key)
         {
             await assign(j,heights[j],"rgb(233, 8, 8)");        
@@ -76,11 +77,6 @@ async function InsertionSort()
         }
         heights[j + 1] = key;
         await assign(j+1,heights[j+1],"rgb(175, 48, 214)");
-        while((j>=0)&&(bars[j].style.color!=="rgb(175, 48, 214)"))
-        {
-            await assign(j,heights[j],"rgb(175, 48, 214)"); 
-            j--;   
-        }
     }                
 }
 
